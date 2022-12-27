@@ -1,0 +1,20 @@
+.Text-Field{
+    margin: 24px 0;
+}
+
+.Text-Field label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Text-Field input{
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06 );
+    width:100%;
+    border: none;
+    font-size: 18px;
+    padding: 18px;
+    box-sizing: border-box; /*para ocupar o 100% na pagina levando em consideração todos os outros elementos*/
+}
