@@ -6,17 +6,6 @@ import { useState } from 'react';
 
 export const Form = (props) => {
     
-    const times = [
-        '',
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ];
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -32,6 +21,10 @@ export const Form = (props) => {
             imagem,
             time
         })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     };
 
     return (
@@ -61,8 +54,8 @@ export const Form = (props) => {
                 <ComboBox 
                     obrigatorio={true} 
                     label="Time" 
-                    items={times}
-                    valor={times}
+                    items={props.times}
+                    valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
                 <Button>Criar card</Button>

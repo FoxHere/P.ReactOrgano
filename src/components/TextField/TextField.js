@@ -8,7 +8,12 @@ export const TextField = (props) => {
     return(
         <div className="Text-Field">
             <label>{props.label}</label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder}/>
+            <input 
+                value={props.valor}
+                onChange={aoDigitado} 
+                required={props.obrigatorio} 
+                placeholder={props.placeholder}
+            />
         </div>
     );
 
